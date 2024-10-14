@@ -1,13 +1,8 @@
-from telegram import Update
-from telegram import ReplyKeyboardMarkup, Update, InputMediaPhoto
-from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
+from telegram.ext import Application, MessageHandler, filters
 import os
-import time
 import asyncio
 from dotenv import load_dotenv
-from telegram.ext import CallbackContext
 from bot_handlers import handle_valid_message, reject_invalid_message
-from io import BytesIO
 
 load_dotenv()
 
